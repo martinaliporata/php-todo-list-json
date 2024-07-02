@@ -7,7 +7,6 @@ createApp({
             // URL per ottenere la lista dei ToDo
             apiUrl: './api/get_all_list.php',
             newTaskName: '',
-            newTaskDescription: '',
         };
     },
     methods: {
@@ -22,17 +21,15 @@ createApp({
                 });
         },
         addTask() {
-            if (this.newTaskName.trim() === '' && this.newTaskDescription.trim() === '') {
+            if (this.newTaskName.trim() === '') {
                 return; // Non aggiungere un task vuoto
             }
             const newToDoObj = {
                 name: this.newTaskName,
-                description: this.newTaskDescription,
                 completed: false
             };
             this.toDoList.push(newToDoObj);
             this.newTaskName = "";
-            this.newTaskDescription = "";
         }
     },
     created() {

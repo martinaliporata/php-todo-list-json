@@ -22,7 +22,7 @@
                     </section>
                     <section class="user-input">
                         <input type="text" class="input-group" @keyup.enter="addTask" v-model="newTaskName">
-                        <input type="text" class="input-group" @keyup.enter="addTask" v-model="newTaskDescription">
+                        <!-- <input type="text" class="input-group" @keyup.enter="addTask" v-model="newTaskDescription"> -->
                     </section>
                 </div>
             </div>
