@@ -1,34 +1,41 @@
-const {createApp} = Vue
-    createApp({
-        data(){
-            return{
-                activities: [],
-                data: '',
-                nome: '',
-                stato: '',
-            }
-        },
-        methods: {
-            getData(){
-                axios.get('./server.php', {
-                    params: {
-                    //     cosa diciamo nella taglia? ciò che diciamo nella domanda
-                        stato: this.stato,
-                        }
-                    })
-                    .then((response) => {
-                    console.log(response);
-                    // come eredito il this dal parent? arrow function.
-                    this.stato=response.data;
-                    })
-                    .catch(function (error) {
+const { createApp } = Vue;
+
+createApp({
+    data() {
+        return {
+            toDoList: [],
+            // URL per ottenere la lista dei ToDo
+            apiUrl: './api/get_all_list.php',
+            newTaskName: '',
+            newTaskDescription: '',
+        };
+    },
+    methods: {
+        getToDoList() {
+            axios.get(this.apiUrl)
+                .then((response) => {
+                    console.log(response.data.tasks);
+                    this.toDoList = response.data.tasks;
+                })
+                .catch(function (error) {
                     console.log(error);
-                    })
-                    .finally(function(){
-                    });
-            }
+                });
         },
-        created(){
-            this.getData()
+        addTask() {
+            if (this.newTaskName.trim() === '' && this.newTaskDescription.trim() === '') {
+                return; // Non aggiungere un task vuoto
+            }
+            const newToDoObj = {
+                name: this.newTaskName,
+                description: this.newTaskDescription,
+                completed: false
+            };
+            this.toDoList.push(newToDoObj);
+            this.newTaskName = "";
+            this.newTaskDescription = "";
         }
-    }).mount('#app')
+    },
+    created() {
+        this.getToDoList();
+    }
+}).mount('#app');

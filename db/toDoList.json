@@ -1,52 +1,54 @@
-[
-    {
-        "data": "2024-07-02",
-        "nome": "Comprare latte",
-        "stato": "in corso"
-    },
-    {
-        "data": "2024-07-03",
-        "nome": "Allenamento in palestra",
-        "stato": "in corso"
-    },
-    {
-        "data": "2024-07-04",
-        "nome": "Incontro con il cliente",
-        "stato": "finito"
-    },
-    {
-        "data": "2024-07-05",
-        "nome": "Leggere un libro",
-        "stato": "in corso"
-    },
-    {
-        "data": "2024-07-06",
-        "nome": "Scrivere un rapporto",
-        "stato": "finito"
-    },
-    {
-        "data": "2024-07-07",
-        "nome": "Fare una passeggiata",
-        "stato": "in corso"
-    },
-    {
-        "data": "2024-07-08",
-        "nome": "Telefonare ai genitori",
-        "stato": "finito"
-    },
-    {
-        "data": "2024-07-09",
-        "nome": "Organizzare la scrivania",
-        "stato": "in corso"
-    },
-    {
-        "data": "2024-07-10",
-        "nome": "Preparare la cena",
-        "stato": "in corso"
-    },
-    {
-        "data": "2024-07-11",
-        "nome": "Pianificare la vacanza",
-        "stato": "finito"
-    }
-]
+{
+    "tasks": [
+        {
+            "name": "Task 1",
+            "description": "Complete the project proposal",
+            "completed": false
+        },
+        {
+            "name": "Task 2",
+            "description": "Buy groceries",
+            "completed": true
+        },
+        {
+            "name": "Task 3",
+            "description": "Schedule a team meeting",
+            "completed": false
+        },
+        {
+            "name": "Task 4",
+            "description": "Write the quarterly report",
+            "completed": true
+        },
+        {
+            "name": "Task 5",
+            "description": "Renew gym membership",
+            "completed": false
+        },
+        {
+            "name": "Task 6",
+            "description": "Call the electrician",
+            "completed": true
+        },
+        {
+            "name": "Task 7",
+            "description": "Finish reading the book",
+            "completed": false
+        },
+        {
+            "name": "Task 8",
+            "description": "Plan the weekend trip",
+            "completed": true
+        },
+        {
+            "name": "Task 9",
+            "description": "Clean the house",
+            "completed": false
+        },
+        {
+            "name": "Task 10",
+            "description": "Update the software",
+            "completed": true
+        }
+    ]
+}
