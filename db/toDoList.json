@@ -1,0 +1,52 @@
+[
+    {
+        "data": "2024-07-02",
+        "nome": "Comprare latte",
+        "stato": "in corso"
+    },
+    {
+        "data": "2024-07-03",
+        "nome": "Allenamento in palestra",
+        "stato": "in corso"
+    },
+    {
+        "data": "2024-07-04",
+        "nome": "Incontro con il cliente",
+        "stato": "finito"
+    },
+    {
+        "data": "2024-07-05",
+        "nome": "Leggere un libro",
+        "stato": "in corso"
+    },
+    {
+        "data": "2024-07-06",
+        "nome": "Scrivere un rapporto",
+        "stato": "finito"
+    },
+    {
+        "data": "2024-07-07",
+        "nome": "Fare una passeggiata",
+        "stato": "in corso"
+    },
+    {
+        "data": "2024-07-08",
+        "nome": "Telefonare ai genitori",
+        "stato": "finito"
+    },
+    {
+        "data": "2024-07-09",
+        "nome": "Organizzare la scrivania",
+        "stato": "in corso"
+    },
+    {
+        "data": "2024-07-10",
+        "nome": "Preparare la cena",
+        "stato": "in corso"
+    },
+    {
+        "data": "2024-07-11",
+        "nome": "Pianificare la vacanza",
+        "stato": "finito"
+    }
+]
